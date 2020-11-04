@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MsgFragment"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/colorGreen"
+    >
+   <ImageView
+       android:id="@+id/iv_backward"
+       android:layout_width="33dp"
+       android:layout_height="33dp"
+       android:ellipsize="none"
+       android:layout_gravity="center"
+       android:paddingLeft="5dp"
+       android:singleLine="true"
+       android:src="@drawable/arrow_back" />
+
+   <TextView
+       android:id="@+id/tv_title"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:ellipsize="marquee"
+       android:gravity="center_horizontal|center"
+       android:singleLine="true"
+       android:text="聊天记账"
+       android:textColor="#ffffff"
+       android:textSize="20dp" />
+
+   <TextView
+       android:id="@+id/tv_forward"
+       android:layout_width="33dp"
+       android:layout_height="33dp"
+       android:layout_alignParentRight="true"
+       android:ellipsize="end"
+       android:gravity="center"
+       android:paddingRight="5dp"
+       android:singleLine="true"
+       android:text=""
+       android:textColor="@android:color/black"
+       android:textSize="18dp"/>
+
+</LinearLayout>
+
+
+   <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msg_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+      android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <Spinner
+          android:id="@+id/spin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+      <EditText
+          android:id="@+id/input_text"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="请输入金额"
+          android:maxLines="2"/>
+
+      <Button
+          android:id="@+id/radioAdd"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:background="@drawable/addshape"
+          android:text="+"/>
+
+      <Button
+          android:id="@+id/send"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="确定"
+          android:textAllCaps="false"/>
+
+   </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_fragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.swufe.myaccount.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12" />
+
+    <fragment
+        android:id="@+id/fragment_msg"
+        android:name="com.swufe.myaccount.MsgFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12" />
+
+    <fragment
+        android:id="@+id/fragment_setting"
+        android:name="com.swufe.myaccount.SettingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12" />
+
+    <RadioGroup
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.01"
+        android:paddingTop="4dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorgreen"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioHome"
+            android:button="@null"
+            android:drawableTop="@drawable/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:text="首页"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/radioMsg"
+            android:button="@null"
+            android:drawableTop="@drawable/chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+
+            android:text="记账"
+            android:textSize="10sp"
+            />
+
+        <RadioButton
+            android:id="@+id/radioSetting"
+            android:button="@null"
+            android:drawableTop="@drawable/personal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:text="个人中心"
+            android:textSize="10sp"/>
+
+    </RadioGroup>
+
+</LinearLayout>

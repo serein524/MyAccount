@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swufe.myaccount">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".classify_item"></activity>
+        <activity android:name=".check" />
+        <activity android:name=".myinfo" />
+        <activity android:name=".fragment_setting" />
+        <activity android:name=".showNote" />
+        <activity android:name=".account_item" />
+        <activity android:name=".MsgItemActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".FrameActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

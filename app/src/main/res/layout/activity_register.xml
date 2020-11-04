@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:paddingTop="100dp">
+    <TextView
+        android:id="@+id/tv_regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:gravity="center"
+        android:textColor="@color/colorBlue"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edt_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="用户名"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_regis"
+        />
+    <EditText
+        android:id="@+id/edt_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="手机号码"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edt_1"
+        />
+    <EditText
+        android:id="@+id/edt_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="密     码"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/edt_2"
+        android:layout_marginTop="10dp"
+
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="wrap_content"
+
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/edt_3"
+        android:layout_centerHorizontal="true"
+        android:text="确定"
+        android:textSize="18sp"
+        android:textColor="#000000"
+
+        />
+</RelativeLayout>
